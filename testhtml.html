@@ -18,11 +18,13 @@
     </head>
     <body ng-app="starter">
         <div id="table">
-            <form>
             <button type="submit" onclick="nonceForSuccessCallback()">Success Scenario</button>
             <button type="submit" onclick="nonceForChallengeCallback()">Challenge Scenario </button>
             <button type="submit" onclick="errorCallback()">Error Scenario </button>
-                </form>
         </div>
+		<form onsubmit="window.location = "http://abc.de.registerReturn?resultCode=500&error=unexpected_error"">
+		  First: Enter in the input field <input type="text" value="text"><br>
+		  Second: Click "submit": <input type="submit" value="Submit">
+		</form>
     </body>
 </html>
