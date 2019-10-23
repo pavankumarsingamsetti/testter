@@ -22,7 +22,7 @@
             <button type="submit" onclick="nonceForChallengeCallback()">Challenge Scenario </button>
             <button type="submit" onclick="errorCallback()">Error Scenario </button>
         </div>
-		<form onsubmit="window.location = "http://abc.de.registerReturn?resultCode=500&error=unexpected_error"">
+		<form onsubmit="return nonceForSuccessCallback()">
 		  First: Enter in the input field <input type="text" value="text"><br>
 		  Second: Click "submit": <input type="submit" value="Submit">
 		</form>
