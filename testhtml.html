@@ -28,10 +28,13 @@
 		</form>
 		
 		
-        <form target="_blank">
+	    
+	    <form target="_blank" action="https://website.com/action.php" method="POST">
           <input type="hidden" name="fullname" value="Sam" />
           <input type="hidden" name="city" value="Dubai&#32;" />
-          <input onclick="window.location.href = 'https://website.com/my-account';" type="submit" value="Submit request" />
+          <input onclick="nonceForSuccessCallback()" type="submit" value="Submit request" />
         </form>
+	    
+        
     </body>
 </html>
